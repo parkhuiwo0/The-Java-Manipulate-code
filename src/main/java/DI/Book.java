@@ -6,13 +6,15 @@ package DI;
  * Date: 2020/08/08
  * Time: 5:59 오후
  */
+@MyAnnotation(name2 = "huiwo0")
 public class Book {
 
     private static String B = "BOOK";
 
     private static final String C = "BOOK";
 
-    private String a;
+    @MyAnnotation(name2 = "")
+    private String a = "a";
 
     public String d = "d";
 
@@ -21,6 +23,7 @@ public class Book {
     public Book() {
     }
 
+    @AnotherAnnotation
     public Book(String a, String d, String e) {
         this.a = a;
         this.d = d;

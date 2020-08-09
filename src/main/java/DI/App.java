@@ -24,5 +24,15 @@ public class App {
 
         Arrays.stream(bookClass.getFields()).forEach(System.out::println);
 
+        /*
+        조회가 안된다. 기본적으로 주석과 같은 취급을 바등ㅁ.
+         */
+        Arrays.stream(Book.class.getAnnotations()).forEach(System.out::println);
+
+        Arrays.stream(Book.class.getDeclaredFields()).forEach(f -> {
+            Arrays.stream(f.getAnnotations()).forEach(System.out::println);
+        });
+
+
     }
 }

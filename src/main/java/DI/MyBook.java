@@ -6,5 +6,7 @@ package DI;
  * Date: 2020/08/08
  * Time: 6:04 오후
  */
+
+@AnotherAnnotation
 public class MyBook extends Book implements MyInterface {
 }
